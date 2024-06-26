@@ -7,7 +7,7 @@ import { TimelineComponent } from './views/timeline/timeline.component';
   standalone: true,
   imports: [RouterOutlet, TimelineComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'angular-x';
