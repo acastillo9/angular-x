@@ -10,6 +10,11 @@ body {
     font-size: 16px;
 }
 
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -22,18 +27,6 @@ a {
 * {
     margin: 0;
     padding: 0;
-}
-
-ul[role='list'], ol[role='list'] {
-    list-style: none;
-}
-
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-a:not([class]) {
-    text-decoration-skip-ink: auto;
 }
 
 img, picture, svg, video, canvas {
@@ -55,20 +48,19 @@ button {
     cursor: pointer;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-        transition: none;
-    }
+.weight-bold {
+    font-weight: bold;
 }
 
-body, html {
-    height: 100%;
-    scroll-behavior: smooth;
+.text-dark {
+    color: #6b6b6b;
 }
+
+.underline-hover:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
