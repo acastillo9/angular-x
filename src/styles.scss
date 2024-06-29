@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 html {
     font-size: 16px;
 }
@@ -9,7 +10,57 @@ body {
     font-size: 16px;
 }
 
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
 a {
     color: #fff;
     text-decoration: none;
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img, picture, svg, video, canvas {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.weight-bold {
+    font-weight: bold;
+}
+
+.text-dark {
+    color: #6b6b6b;
+}
+
+.underline-hover:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
