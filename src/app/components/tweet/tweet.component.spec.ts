@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TweetsComponent } from './tweet.component';
+import { TweetComponent } from './tweet.component';
 
-describe('TweetsComponent', () => {
-  let component: TweetsComponent;
-  let fixture: ComponentFixture<TweetsComponent>;
+describe('TweetComponent', () => {
+  let component: TweetComponent;
+  let fixture: ComponentFixture<TweetComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TweetsComponent],
+      imports: [TweetComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(TweetsComponent);
+    fixture = TestBed.createComponent(TweetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

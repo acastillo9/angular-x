@@ -1,11 +1,13 @@
 import { Tweet } from '../../models/tweet.model';
 import { Component } from '@angular/core';
-import { TweetComponent } from '../tweets/tweet.component';
+import { TweetComponent } from '../../components/tweet/tweet.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-timeline',
   standalone: true,
-  imports: [TweetComponent, CommonModule],
+  imports: [TweetComponent, CommonModule, FormsModule],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.scss',
 })
@@ -72,4 +74,14 @@ export class TimelineComponent {
       share: '',
     },
   ];
+
+  tweetText: string = '';
+
+  tweetClicked() {
+    console.log('Tweet Clicked!!!')
+  }
+
+  saveTweet() {
+    console.log('tweet text', this.tweetText)
+  }
 }

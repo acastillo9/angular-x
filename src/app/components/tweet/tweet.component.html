@@ -1,23 +1,21 @@
-@for (tweet of tweets; track tweet.id) {
-
-<div class="tweet">
+<div class="tweet" (click)="tweetClicked()">
   <div class="user-info">
     <div>
       <div class="tweet-header">
         <a href="#">
           <img
             class="profile-image"
-            [src]="tweet.user.profilePhoto"
+            [src]="tweet?.user?.profilePhoto"
             alt="Profile Image"
           />
         </a>
         <div>
           <a class="weight-bold underline-hover" href="#"
-            >{{ tweet.user.name }}
+            >{{ tweet?.user?.name }}
           </a>
-          <a class="text-dark" href="#">{{ tweet.user.username }} </a>
+          <a class="text-dark" href="#">{{ tweet?.user?.username }} </a>
           <a class="text-dark underline-hover" href="#"
-            >{{ tweet.user.publishTime }}
+            >{{ tweet?.user?.publishTime }}
           </a>
         </div>
       </div>
@@ -40,7 +38,7 @@
   </div>
   <div class="tweet-content">
     <p>
-      {{ tweet.content }}
+      {{ tweet?.content }}
     </p>
   </div>
   <div class="tweet-buttons">
@@ -58,7 +56,7 @@
           </g>
         </svg>
       </span>
-      <span>{{ tweet.comments }}K</span>
+      <span>{{ tweet?.comments }}K</span>
     </button>
     <button class="btn green">
       <span class="icon">
@@ -74,7 +72,7 @@
           </g>
         </svg>
       </span>
-      <span>{{ tweet.retweets }}K</span>
+      <span>{{ tweet?.retweets }}K</span>
     </button>
     <button class="btn red">
       <span class="icon">
@@ -90,7 +88,7 @@
           </g>
         </svg>
       </span>
-      <span>{{ tweet.likes }}K</span>
+      <span>{{ tweet?.likes }}K</span>
     </button>
     <button class="btn">
       <span class="icon">
@@ -106,7 +104,7 @@
           </g>
         </svg>
       </span>
-      <span>{{ tweet.stats }}M</span>
+      <span>{{ tweet?.stats }}M</span>
     </button>
     <div class="other">
       <button class="btn">
@@ -142,4 +140,3 @@
     </div>
   </div>
 </div>
-}

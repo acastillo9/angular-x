@@ -1,7 +1,12 @@
 <section class="timeline">
+  <input type="text" [(ngModel)]="tweetText">
+  <button (click)="saveTweet()">Post</button>
+
   <div class="timeline">
     <div>
-      <app-tweet [tweets]="tweets"></app-tweet>
+      @for (tweet of tweets; track tweet.id) {
+      <app-tweet [tweet]="tweet" (clickTweet)="tweetClicked()"></app-tweet>
+      }
     </div>
   </div>
 </section>

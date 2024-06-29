@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Tweet } from '../../models/tweet.model';
 import { CommonModule } from '@angular/common';
 
@@ -10,5 +10,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './tweet.component.scss',
 })
 export class TweetComponent {
-  @Input() tweets: Tweet[] = [];
+  @Input() 
+  tweet: Tweet | null = null
+
+  @Output()
+  clickTweet: EventEmitter<void> = new EventEmitter() 
+
+  tweetClicked() {
+    this.clickTweet.emit()
+  }
 }
