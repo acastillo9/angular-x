@@ -1,6 +1,5 @@
 <section class="timeline">
-  <input type="text" [(ngModel)]="tweetText">
-  <button (click)="saveTweet()">Post</button>
+  <app-tweet-input (onInput)="saveTweet($event)"></app-tweet-input>
 
   <div class="timeline">
     <div>
