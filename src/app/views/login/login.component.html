@@ -1,0 +1,21 @@
+<div class="h-screen w-full grid place-items-center">
+    <section class="p-4 border-2 rounded-lg">
+        <h2 class="text-center mb-6 font-bold text-2xl">Login Form</h2>
+        <div>
+            <span>{{errorMessage}}</span>
+            <form class="flex flex-col">
+                <input class="mb-4 w-96 p-3 text-black rounded" type="text" name="username" id="username"
+                    placeholder="Username" [(ngModel)]="username">
+
+                <input class="mb-4 w-96 p-3 text-black rounded" type="password" name="password" id="password"
+                    placeholder="Password" [(ngModel)]="password">
+
+                <div class="flex justify-center">
+                    <button
+                        class="bg-sky-500 py-2 px-5 rounded-full hover:bg-sky-600 disabled:bg-sky-700 disabled:text-neutral-300" (click)="login()">Login</button>
+                </div>
+            </form>
+        </div>
+        <a class="hover:underline" routerLink="/register">go to register</a>
+    </section>
+</div>

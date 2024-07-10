@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TweetService } from '../../services/tweet.service';
 import { TweetInputComponent } from '../../components/tweet-input/tweet-input.component';
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-timeline',
@@ -17,7 +19,7 @@ export class TimelineComponent {
   tweetText: string = ''
   tweets = this.tweetService.tweets
 
-  constructor(private tweetService: TweetService) {}
+  constructor(private tweetService: TweetService, private router: Router, private authService: AuthService) {}
 
   tweetClicked() {
     console.log('Tweet Clicked!!!')
@@ -26,5 +28,10 @@ export class TimelineComponent {
 
   saveTweet(tweet: Tweet) {
     this.tweetService.addTweet(tweet)
+  }
+
+  logout() {
+    this.authService.logout()
+    this.router.navigateByUrl('/login')
   }
 }
