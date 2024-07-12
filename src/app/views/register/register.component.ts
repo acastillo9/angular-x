@@ -25,7 +25,7 @@ export class RegisterComponent {
     terms: new FormControl(false)
   }, { validators: passwordConfirmValidator })
 
-  constructor(private usersService: UsersService, private router: Router) {}
+  constructor(private usersService: UsersService, private router: Router) { }
 
   get name() {
     return this.registerForm.get('name');
@@ -41,7 +41,14 @@ export class RegisterComponent {
     console.log(this.registerForm.get('name')?.value)
     if (this.registerForm.valid) {
       // store the form data
-      this.usersService.addUser(this.registerForm.value as User)
+      this.usersService.addUser(this.registerForm.value as User).subscribe({
+        next(data) {
+          console.log('saved', data)
+        }, 
+        error(error) {
+          console.log(error)
+        }
+    })
       console.log('SAVED')
       this.router.navigate(['/login'])
     }

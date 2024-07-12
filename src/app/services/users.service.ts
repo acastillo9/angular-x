@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/user.model';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,10 +15,30 @@ export class UsersService {
     }
   ]
 
-  constructor() { }
-  
-  addUser(user: User) {
-    this.users.push(user)
+  constructor(private httpClient: HttpClient) { }
+
+  // async addUser(user: User) {
+  //   try {
+  //     const response = await fetch('http://localhost:3000/users', {
+  //       method: 'POST',
+  //       body: JSON.stringify(user),
+  //       headers: {
+  //         'Content-Type': 'application/json'
+  //       }
+  //     })
+  //     const data = await response.json()
+  //     console.log(data)
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
+
+  addUser(user: User): Observable<User> {
+    return this.httpClient.post<User>('http://localhost:3000/users', user, {
+      headers: {
+        "content-Type": "application/json"
+      }
+    })
   }
 
   findUser(username: string) {
