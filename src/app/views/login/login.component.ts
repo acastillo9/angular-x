@@ -15,22 +15,19 @@ export class LoginComponent {
   password: string = ''
   errorMessage: string = ''
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router) { }
 
   login() {
     console.log(this.username, this.password)
 
-    let isLogin = false;
-
-    try {
-      isLogin = this.authService.login(this.username, this.password)
-    } catch(error) {
-      console.log(error)
-      this.errorMessage = (error as any).message
-    }
-
-    if (isLogin) {
-      this.router.navigateByUrl('/timeline')
-    }
+    this.authService.login(this.username, this.password).subscribe({
+      next: () => {
+        this.router.navigateByUrl('/timeline')
+      },
+      error: (error) => {
+        console.log(error)
+        this.errorMessage = (error as any).message
+      }
+    })
   }
 }

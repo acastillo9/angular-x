@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TimelineComponent } from './views/timeline/timeline.component';
 
@@ -9,6 +9,10 @@ import { TimelineComponent } from './views/timeline/timeline.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angular-x';
+
+  ngOnInit(): void {
+    // lo que escriban acá se ejecuta cuando el componente es inicializado
+  }
 }

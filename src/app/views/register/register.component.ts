@@ -41,16 +41,10 @@ export class RegisterComponent {
     console.log(this.registerForm.get('name')?.value)
     if (this.registerForm.valid) {
       // store the form data
-      this.usersService.addUser(this.registerForm.value as User).subscribe({
-        next(data) {
-          console.log('saved', data)
-        }, 
-        error(error) {
-          console.log(error)
-        }
-    })
-      console.log('SAVED')
-      this.router.navigate(['/login'])
+      this.usersService.addUser(this.registerForm.value as User).subscribe((data) => {
+        console.log('saved', data)
+        this.router.navigate(['/login'])
+      })
     }
   }
 }

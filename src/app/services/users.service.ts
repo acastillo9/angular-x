@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/user.model';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -41,7 +41,8 @@ export class UsersService {
     })
   }
 
-  findUser(username: string) {
-    return this.users.find((user) => user.username === username)
+  findUser(username: string): Observable<User> {
+    return this.httpClient.get<User[]>(`http://localhost:3000/users?username=${username}`)
+      .pipe(map((users: User[]) => users[0])) // TODO remove this if you remove json-server
   }
 }
