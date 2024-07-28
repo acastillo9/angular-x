@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "start:db": "npx json-server db.json",
+    "start:db": "node server.js",
     "lint": "ng lint"
   },
   "private": true,
@@ -23,6 +23,7 @@
     "@fontsource-variable/public-sans": "^5.0.19",
     "@ng-icons/core": "^29.0.0",
     "@ng-icons/font-awesome": "^29.0.0",
+    "jsonwebtoken": "^9.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -36,7 +37,7 @@
     "autoprefixer": "^10.4.19",
     "eslint": "^9.6.0",
     "jasmine-core": "~5.1.0",
-    "json-server": "^1.0.0-beta.1",
+    "json-server": "^0.17.4",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",

@@ -1,424 +1,95 @@
 {
   "users": [
     {
-      "id": "1",
-      "profilePhoto": "https://randomuser.me/api/portraits/men/1.jpg",
-      "name": "Alfy",
-      "username": "@adolder0"
+      "id": 1,
+      "profileImage": "https://randomuser.me/api/portraits/men/1.jpg",
+      "name": "Alfy Dolder",
+      "username": "@adolder0",
+      "email": "alfy@example.com",
+      "password": "password123",
+      "dateOfBirth": "1990-01-01"
     },
     {
-      "id": "2",
-      "profilePhoto": "https://randomuser.me/api/portraits/men/2.jpg",
-      "name": "Johnnie",
-      "username": "@jseivertsen1"
+      "id": 2,
+      "profileImage": "https://randomuser.me/api/portraits/women/2.jpg",
+      "name": "Bella Bright",
+      "username": "@bellabright",
+      "email": "bella@example.com",
+      "password": "securepass456",
+      "dateOfBirth": "1991-02-02"
     },
     {
-      "id": "3",
-      "profilePhoto": "https://randomuser.me/api/portraits/men/3.jpg",
-      "name": "Banky",
-      "username": "@btallis2"
+      "id": 3,
+      "profileImage": "https://randomuser.me/api/portraits/men/3.jpg",
+      "name": "Charlie Charming",
+      "username": "@charmingcharlie",
+      "email": "charlie@example.com",
+      "password": "mypassword789",
+      "dateOfBirth": "1992-03-03"
     },
     {
-      "id": "4",
-      "profilePhoto": "https://randomuser.me/api/portraits/men/4.jpg",
-      "name": "Kristofor",
-      "username": "@khadingham3"
+      "id": 4,
+      "profileImage": "https://randomuser.me/api/portraits/women/4.jpg",
+      "name": "Daisy Duke",
+      "username": "@daisyduke",
+      "email": "daisy@example.com",
+      "password": "daisypass123",
+      "dateOfBirth": "1993-04-04"
     },
     {
-      "id": "5",
-      "profilePhoto": "https://randomuser.me/api/portraits/men/5.jpg",
-      "name": "Clement",
-      "username": "@claidlaw4"
+      "id": 5,
+      "profileImage": "https://randomuser.me/api/portraits/men/5.jpg",
+      "name": "Ethan Rocks",
+      "username": "@ethanrocks",
+      "email": "ethan@example.com",
+      "password": "ethansecure456",
+      "dateOfBirth": "1994-05-05"
     },
     {
-      "id": "6",
-      "profilePhoto": "https://randomuser.me/api/portraits/women/1.jpg",
-      "name": "Karlyn",
-      "username": "@kklemenz5"
+      "id": 6,
+      "profileImage": "https://randomuser.me/api/portraits/women/6.jpg",
+      "name": "Fiona Flare",
+      "username": "@fionaflare",
+      "email": "fiona@example.com",
+      "password": "fionaflare789",
+      "dateOfBirth": "1995-06-06"
     },
     {
-      "id": "7",
-      "profilePhoto": "https://randomuser.me/api/portraits/women/2.jpg",
-      "name": "Sheelah",
-      "username": "@sharuard6"
+      "id": 7,
+      "profileImage": "https://randomuser.me/api/portraits/men/7.jpg",
+      "name": "George Glow",
+      "username": "@georgeglow",
+      "email": "george@example.com",
+      "password": "georgepass123",
+      "dateOfBirth": "1996-07-07"
     },
     {
-      "id": "8",
-      "profilePhoto": "https://randomuser.me/api/portraits/men/6.jpg",
-      "name": "Augustus",
-      "username": "@agauge7"
+      "id": 8,
+      "profileImage": "https://randomuser.me/api/portraits/women/8.jpg",
+      "name": "Hannah Hue",
+      "username": "@hannahhue",
+      "email": "hannah@example.com",
+      "password": "hannahsecure456",
+      "dateOfBirth": "1997-08-08"
     },
     {
-      "id": "9",
-      "profilePhoto": "https://randomuser.me/api/portraits/women/3.jpg",
-      "name": "Arluene",
-      "username": "@anardi8"
+      "id": 9,
+      "profileImage": "https://randomuser.me/api/portraits/men/9.jpg",
+      "name": "Ian Inspire",
+      "username": "@ianinspire",
+      "email": "ian@example.com",
+      "password": "ianpass789",
+      "dateOfBirth": "1998-09-09"
     },
     {
-      "id": "10",
-      "profilePhoto": "https://randomuser.me/api/portraits/men/7.jpg",
-      "name": "Cody",
-      "username": "@ctuck9"
-    },
-    {
-      "id": "6eec",
-      "profilePhoto": "https://randomuser.me/api/portraits/men/8.jpg",
-      "name": "Juan",
-      "username": "@juan09"
-    },
-    {
-      "id": "2aff",
-      "name": "maria",
-      "username": "maria10",
-      "email": "maria@mail.com",
-      "dateOfBirth": "2024-07-18",
-      "gender": "female",
-      "password": "123456",
-      "passwordConfirm": "123456",
-      "terms": false
-    },
-    {
-      "id": "440d",
-      "name": "luis",
-      "username": "luis7",
-      "email": "luis@mail.com",
-      "dateOfBirth": "2024-07-11",
-      "gender": "male",
-      "password": "123456",
-      "passwordConfirm": "123456",
-      "terms": false
+      "id": 10,
+      "profileImage": "https://randomuser.me/api/portraits/women/10.jpg",
+      "name": "Jasmine Light",
+      "username": "@jasminelight",
+      "email": "jasmine@example.com",
+      "password": "jasmine123",
+      "dateOfBirth": "1999-10-10"
     }
   ],
-  "tweets": [
-    {
-      "id": "1",
-      "userId": 1,
-      "date": "1h",
-      "content": "Excited to announce my new project! Stay tuned for updates.",
-      "image": "",
-      "comments": 12,
-      "retweets": 25,
-      "likes": 100,
-      "stats": 50
-    },
-    {
-      "id": "2",
-      "userId": 2,
-      "date": "2h",
-      "content": "Just finished a great book on leadership. Highly recommended!",
-      "image": "",
-      "comments": 20,
-      "retweets": 30,
-      "likes": 150,
-      "stats": 60
-    },
-    {
-      "id": "3",
-      "userId": 3,
-      "date": "3h",
-      "content": "Working on some exciting new features. Can't wait to share them with you all!",
-      "image": "",
-      "comments": 15,
-      "retweets": 45,
-      "likes": 200,
-      "stats": 80
-    },
-    {
-      "id": "4",
-      "userId": 4,
-      "date": "4h",
-      "content": "Loving the feedback from our latest release. Keep it coming!",
-      "image": "",
-      "comments": 10,
-      "retweets": 20,
-      "likes": 75,
-      "stats": 30
-    },
-    {
-      "id": "5",
-      "userId": 5,
-      "date": "5h",
-      "content": "Grateful for the support from my amazing team. We are achieving great things together.",
-      "image": "",
-      "comments": 8,
-      "retweets": 15,
-      "likes": 60,
-      "stats": 25
-    },
-    {
-      "id": "6",
-      "userId": 6,
-      "date": "6h",
-      "content": "Today was a productive day. Looking forward to tomorrow's challenges.",
-      "image": "",
-      "comments": 5,
-      "retweets": 10,
-      "likes": 50,
-      "stats": 20
-    },
-    {
-      "id": "7",
-      "userId": 7,
-      "date": "7h",
-      "content": "Stay positive and keep pushing forward. Success is just around the corner.",
-      "image": "",
-      "comments": 7,
-      "retweets": 14,
-      "likes": 55,
-      "stats": 22
-    },
-    {
-      "id": "8",
-      "userId": 8,
-      "date": "8h",
-      "content": "Our team is making great progress. Exciting updates coming soon!",
-      "image": "",
-      "comments": 6,
-      "retweets": 12,
-      "likes": 45,
-      "stats": 18
-    },
-    {
-      "id": "9",
-      "userId": 9,
-      "date": "9h",
-      "content": "Just had an inspiring meeting with some brilliant minds. Feeling motivated!",
-      "image": "",
-      "comments": 4,
-      "retweets": 8,
-      "likes": 40,
-      "stats": 16
-    },
-    {
-      "id": "10",
-      "userId": 10,
-      "date": "10h",
-      "content": "Reflecting on our journey so far. It's been an incredible ride.",
-      "image": "",
-      "comments": 3,
-      "retweets": 6,
-      "likes": 35,
-      "stats": 14
-    },
-    {
-      "id": "11",
-      "userId": 1,
-      "date": "11h",
-      "content": "Exploring new ideas for future projects. Inspiration is everywhere.",
-      "image": "",
-      "comments": 14,
-      "retweets": 22,
-      "likes": 90,
-      "stats": 45
-    },
-    {
-      "id": "12",
-      "userId": 2,
-      "date": "12h",
-      "content": "Had a productive meeting with the team today. Great things are coming!",
-      "image": "",
-      "comments": 18,
-      "retweets": 28,
-      "likes": 120,
-      "stats": 48
-    },
-    {
-      "id": "13",
-      "userId": 3,
-      "date": "13h",
-      "content": "The new update is live! Check it out and let us know your thoughts.",
-      "image": "",
-      "comments": 16,
-      "retweets": 32,
-      "likes": 110,
-      "stats": 55
-    },
-    {
-      "id": "14",
-      "userId": 4,
-      "date": "14h",
-      "content": "Enjoying some downtime with family. Balance is key.",
-      "image": "",
-      "comments": 12,
-      "retweets": 25,
-      "likes": 85,
-      "stats": 40
-    },
-    {
-      "id": "15",
-      "userId": 5,
-      "date": "15h",
-      "content": "Attended an inspiring conference today. Feeling energized!",
-      "image": "",
-      "comments": 10,
-      "retweets": 20,
-      "likes": 75,
-      "stats": 35
-    },
-    {
-      "id": "16",
-      "userId": 6,
-      "date": "16h",
-      "content": "Reading through some amazing customer feedback. Thanks for your support!",
-      "image": "",
-      "comments": 8,
-      "retweets": 15,
-      "likes": 70,
-      "stats": 30
-    },
-    {
-      "id": "17",
-      "userId": 7,
-      "date": "17h",
-      "content": "Looking forward to our next big release. Exciting times ahead.",
-      "image": "",
-      "comments": 9,
-      "retweets": 18,
-      "likes": 65,
-      "stats": 28
-    },
-    {
-      "id": "18",
-      "userId": 8,
-      "date": "18h",
-      "content": "Had a great brainstorming session today. Lots of creative ideas!",
-      "image": "",
-      "comments": 7,
-      "retweets": 14,
-      "likes": 55,
-      "stats": 24
-    },
-    {
-      "id": "19",
-      "userId": 9,
-      "date": "19h",
-      "content": "Excited to see what the future holds. Onward and upward!",
-      "image": "",
-      "comments": 6,
-      "retweets": 12,
-      "likes": 50,
-      "stats": 22
-    },
-    {
-      "id": "20",
-      "userId": 10,
-      "date": "20h",
-      "content": "Reflecting on the lessons learned this year. Growth is a continuous journey.",
-      "image": "",
-      "comments": 5,
-      "retweets": 10,
-      "likes": 45,
-      "stats": 20
-    },
-    {
-      "id": "21",
-      "userId": 1,
-      "date": "21h",
-      "content": "Collaborating with amazing people always leads to innovative solutions. Grateful for my team.",
-      "image": "",
-      "comments": 12,
-      "retweets": 30,
-      "likes": 85,
-      "stats": 45
-    },
-    {
-      "id": "22",
-      "userId": 2,
-      "date": "22h",
-      "content": "Just finished an intense workout. Feeling refreshed and ready to tackle the day!",
-      "image": "",
-      "comments": 18,
-      "retweets": 25,
-      "likes": 95,
-      "stats": 50
-    },
-    {
-      "id": "23",
-      "userId": 3,
-      "date": "23h",
-      "content": "Our latest product update is getting rave reviews. Thank you for your feedback!",
-      "image": "",
-      "comments": 14,
-      "retweets": 35,
-      "likes": 100,
-      "stats": 55
-    },
-    {
-      "id": "24",
-      "userId": 4,
-      "date": "1d",
-      "content": "Attended a fantastic webinar on technology trends. Learned a lot and made some great connections.",
-      "image": "",
-      "comments": 16,
-      "retweets": 28,
-      "likes": 120,
-      "stats": 60
-    },
-    {
-      "id": "25",
-      "userId": 5,
-      "date": "1d",
-      "content": "Excited to be working on a new project that will make a big impact. Stay tuned!",
-      "image": "",
-      "comments": 10,
-      "retweets": 20,
-      "likes": 80,
-      "stats": 40
-    },
-    {
-      "id": "26",
-      "userId": 6,
-      "date": "1d",
-      "content": "Taking some time to reflect on personal growth and setting new goals.",
-      "image": "",
-      "comments": 9,
-      "retweets": 19,
-      "likes": 75,
-      "stats": 35
-    },
-    {
-      "id": "27",
-      "userId": 7,
-      "date": "1d",
-      "content": "Had an incredible meeting with industry leaders. Exciting partnerships ahead.",
-      "image": "",
-      "comments": 11,
-      "retweets": 22,
-      "likes": 95,
-      "stats": 48
-    },
-    {
-      "id": "28",
-      "userId": 8,
-      "date": "1d",
-      "content": "Exploring new technologies to enhance our product offerings. Innovation never stops.",
-      "image": "",
-      "comments": 8,
-      "retweets": 17,
-      "likes": 65,
-      "stats": 30
-    },
-    {
-      "id": "29",
-      "userId": 9,
-      "date": "1d",
-      "content": "Just received some great feedback from our users. Always striving to improve.",
-      "image": "",
-      "comments": 6,
-      "retweets": 15,
-      "likes": 55,
-      "stats": 28
-    },
-    {
-      "id": "30",
-      "userId": 10,
-      "date": "1d",
-      "content": "Preparing for an important presentation. Excited to share our vision with the world.",
-      "image": "",
-      "comments": 7,
-      "retweets": 18,
-      "likes": 70,
-      "stats": 32
-    }
-  ]
+  "tweets": []
 }
