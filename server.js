@@ -14,9 +14,7 @@ function createToken(payload) {
 
 // Verify the token
 function verifyToken(token) {
-  return jwt.verify(token, SECRET_KEY, (err, decode) =>
-    decode !== undefined ? decode : err,
-  );
+  return jwt.verify(token, SECRET_KEY);
 }
 
 // Check if the user exists in database
@@ -29,21 +27,62 @@ function isAuthenticated({ username, password }) {
   );
 }
 
+function isAuthorized(req) {
+  const token = req.headers.authorization?.split(" ")[1];
+  try {
+    verifyToken(token);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
 server.post("/auth/login", (req, res) => {
   const { username, password } = req.body;
-  if (isAuthenticated({ username, password }) === false) {
+  if (!isAuthenticated({ username, password })) {
     const status = 401;
     const message = "Login failure";
     res.status(status).json({ status, message });
     return;
   }
-  const access_token = createToken({ username, password });
+  const access_token = createToken({ username });
   res.status(200).json({ access_token });
 });
 
+server.get("/auth/me", (req, res) => {
+  const token = req.headers.authorization?.split(" ")[1];
+  try {
+    const decoded = verifyToken(token);
+    const db = router.db.getState();
+    const user = db.users.find((user) => user.email === decoded.username);
+    if (!user) throw new Error();
+    const me = {
+      id: user.id,
+      profileImage: user.profileImage,
+      name: user.name,
+      username: user.email,
+      email: user.email,
+    };
+    res.status(200).json(me);
+  } catch (err) {
+    const status = 401;
+    const message = "Unauthorized";
+    res.status(status).json({ status, message });
+  }
+});
+
+server.use((req, res, next) => {
+  if (isAuthorized(req)) {
+    next();
+  } else {
+    const status = 401;
+    const message = "Unauthorized";
+    res.status(status).json({ status, message });
+  }
+});
 server.use(router);
 server.listen(3000, () => {
   console.log("JSON Server is running");
