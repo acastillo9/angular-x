@@ -8,9 +8,8 @@ describe('TweetInputComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TweetInputComponent]
-    })
-    .compileComponents();
+      imports: [TweetInputComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TweetInputComponent);
     component = fixture.componentInstance;

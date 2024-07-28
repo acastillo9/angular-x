@@ -10,13 +10,12 @@ import { CommonModule } from '@angular/common';
   styleUrl: './tweet.component.scss',
 })
 export class TweetComponent {
-  @Input() 
-  tweet: Tweet | null = null
+  @Input()
+  tweet: Tweet | null = null;
 
-  @Output()
-  clickTweet: EventEmitter<void> = new EventEmitter() 
+  @Output() clickTweet = new EventEmitter();
 
   tweetClicked() {
-    this.clickTweet.emit()
+    this.clickTweet.emit();
   }
 }

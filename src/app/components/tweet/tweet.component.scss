@@ -1,94 +1,94 @@
 .btn {
-    color: #6b6b6b;
-    transition: all ease .2s;
-    display: flex;
-    align-items: center;
+  color: #6b6b6b;
+  transition: all ease 0.2s;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: #1d9bf0;
+  }
+
+  .icon {
+    padding: 0.3rem;
+    border-radius: 100%;
 
     &:hover {
-        color: #1d9bf0;
+      background-color: rgba(29, 155, 240, 0.3);
     }
 
-    .icon {
-        padding: 0.3rem;
-        border-radius: 100%;
-
-        &:hover {
-            background-color: rgba(29, 155, 240, 0.3);
-        }
-
-        svg {
-            width: 1.25rem;
-            height: 1.25rem;
-            fill: currentColor;
-        }
+    svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      fill: currentColor;
     }
+  }
 }
 
 .btn.green {
-    &:hover {
-        color: #00BA7C;
-    }
+  &:hover {
+    color: #00ba7c;
+  }
 
-    .icon {
-        &:hover {
-            background-color: rgba(0, 186, 124, 0.3);
-        }
+  .icon {
+    &:hover {
+      background-color: rgba(0, 186, 124, 0.3);
     }
+  }
 }
 
 .btn.red {
-    &:hover {
-        color: #F91880;
-    }
+  &:hover {
+    color: #f91880;
+  }
 
-    .icon {
-        &:hover {
-            background-color: rgba(249, 24, 128, 0.3);
-        }
+  .icon {
+    &:hover {
+      background-color: rgba(249, 24, 128, 0.3);
     }
+  }
 }
 
 /* Custom Classes */
 
 .tweet {
+  display: flex;
+  gap: 0.9rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ffffff30;
+  flex-direction: column;
+
+  .user-info {
     display: flex;
+    align-items: center;
     gap: 0.9rem;
-    padding: 1rem;
-    border-bottom: 1px solid #ffffff30;
+    justify-content: space-between;
+  }
+
+  .profile-image {
+    width: 2.5rem;
+    max-width: none;
+    border-radius: 100%;
+  }
+
+  .tweet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .tweet-content {
+    margin-bottom: 0.5rem;
+    display: flex;
     flex-direction: column;
+  }
 
-    .user-info {
-        display: flex;
-        align-items: center;
-        gap: 0.9rem;
-        justify-content: space-between;
+  .tweet-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .other {
+      display: flex;
     }
-
-    .profile-image {
-        width: 2.5rem;
-        max-width: none;
-        border-radius: 100%;
-    }
-
-    .tweet-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0.9rem;
-    }
-
-    .tweet-content {
-        margin-bottom: 0.5rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tweet-buttons {
-        display: flex;
-        justify-content: space-between;
-
-        .other {
-            display: flex;
-        }
-    }
+  }
 }

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Tweet } from '../models/tweet.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TweetService {
   tweets: Tweet[] = [
@@ -62,10 +62,7 @@ export class TweetService {
     },
   ];
 
-  constructor() { }
-
   addTweet(tweet: Tweet) {
-
     // This is creating mock data
     const newTweet = {
       ...tweet,
@@ -82,8 +79,8 @@ export class TweetService {
       retweets: 0,
       likes: 0,
       stats: 0,
-    }
+    };
 
-    this.tweets.push(newTweet)
+    this.tweets.push(newTweet);
   }
 }

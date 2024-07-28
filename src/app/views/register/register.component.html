@@ -1,59 +1,124 @@
 <div class="h-screen w-full grid place-items-center">
-    <section class="p-4 border-2 rounded-lg">
-        <h2 class="text-center mb-6 font-bold text-2xl">Register Form</h2>
-        <div>
-            <form class="flex flex-col" [formGroup]="registerForm" (ngSubmit)="register()">
-                <div class="form-control">
-                    <input class="mb-4 w-96 p-3 text-black rounded" type="text" name="name" id="name" placeholder="Name"
-                        formControlName="name" [ngClass]="{'mb-1': name?.invalid && (name?.dirty || name?.touched)}">
-                    <div *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="mb-4">
-                        <div *ngIf="name?.hasError('required')" class="text-red-600">
-                            Name is required.
-                        </div>
-                    </div>
-                </div>
-
-                <input class="mb-4 w-96 p-3 text-black rounded" type="text" name="username" id="username" placeholder="Username"
-                        formControlName="username">
-
-                <input class="mb-4 w-96 p-3 text-black rounded" type="email" name="email" id="email" placeholder="Email"
-                    formControlName="email" [ngClass]="{'mb-1': email?.invalid && (email?.dirty || email?.touched)}">
-                <div *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="mb-4">
-                    <div *ngIf="email?.hasError('required')" class="text-red-600">
-                        Email is required.
-                    </div>
-                    <div *ngIf="email?.hasError('email')" class="text-red-600">
-                        Enter a valid email.
-                    </div>
-                </div>
-
-                <input class="mb-4 w-96 p-3 text-black rounded" type="date" name="dateOfBirth" id="dateOfBirth"
-                    placeholder="Date of Birth" formControlName="dateOfBirth">
-                <select class="mb-4 w-96 p-3 text-black rounded" name="gender" id="gender" placeholder="Gender"
-                    formControlName="gender">
-                    <option value="">Select One</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-                <input class="mb-4 w-96 p-3 text-black rounded" type="password" name="password" id="password"
-                    placeholder="Password" formControlName="password">
-                <input class="mb-4 w-96 p-3 text-black rounded" type="password" name="passwordConfirm"
-                    id="passwordConfirm" placeholder="Password Confirmation" formControlName="passwordConfirm">
-                <div *ngIf="registerForm.hasError('passwordConfirm') && (registerForm.touched || registerForm.dirty)"
-                    class="text-red-600 w-96">
-                    Password confirm does not match with the password value.
-                </div>
-                <div class="mb-6">
-                    <input class="mr-2" type="checkbox" name="terms" id="terms"> <label for="terms">Accept terms and
-                        conditions</label>
-                </div>
-                <div class="flex justify-center">
-                    <button
-                        class="bg-sky-500 py-2 px-5 rounded-full hover:bg-sky-600 disabled:bg-sky-700 disabled:text-neutral-300"
-                        [disabled]="!registerForm.valid">Register</button>
-                </div>
-            </form>
+  <section class="p-4 border-2 rounded-lg">
+    <h2 class="text-center mb-6 font-bold text-2xl">Register Form</h2>
+    <div>
+      <form
+        class="flex flex-col"
+        [formGroup]="registerForm"
+        (ngSubmit)="register()"
+      >
+        <div class="form-control">
+          <input
+            class="mb-4 w-96 p-3 text-black rounded"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            formControlName="name"
+            [ngClass]="{
+              'mb-1': name?.invalid && (name?.dirty || name?.touched)
+            }"
+          />
+          <div
+            *ngIf="name?.invalid && (name?.dirty || name?.touched)"
+            class="mb-4"
+          >
+            <div *ngIf="name?.hasError('required')" class="text-red-600">
+              Name is required.
+            </div>
+          </div>
         </div>
-        <a class="hover:underline" routerLink="/login">go to login</a>
-    </section>
+
+        <input
+          class="mb-4 w-96 p-3 text-black rounded"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+          formControlName="username"
+        />
+
+        <input
+          class="mb-4 w-96 p-3 text-black rounded"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          formControlName="email"
+          [ngClass]="{
+            'mb-1': email?.invalid && (email?.dirty || email?.touched)
+          }"
+        />
+        <div
+          *ngIf="email?.invalid && (email?.dirty || email?.touched)"
+          class="mb-4"
+        >
+          <div *ngIf="email?.hasError('required')" class="text-red-600">
+            Email is required.
+          </div>
+          <div *ngIf="email?.hasError('email')" class="text-red-600">
+            Enter a valid email.
+          </div>
+        </div>
+
+        <input
+          class="mb-4 w-96 p-3 text-black rounded"
+          type="date"
+          name="dateOfBirth"
+          id="dateOfBirth"
+          placeholder="Date of Birth"
+          formControlName="dateOfBirth"
+        />
+        <select
+          class="mb-4 w-96 p-3 text-black rounded"
+          name="gender"
+          id="gender"
+          placeholder="Gender"
+          formControlName="gender"
+        >
+          <option value="">Select One</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <input
+          class="mb-4 w-96 p-3 text-black rounded"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          formControlName="password"
+        />
+        <input
+          class="mb-4 w-96 p-3 text-black rounded"
+          type="password"
+          name="passwordConfirm"
+          id="passwordConfirm"
+          placeholder="Password Confirmation"
+          formControlName="passwordConfirm"
+        />
+        <div
+          *ngIf="
+            registerForm.hasError('passwordConfirm') &&
+            (registerForm.touched || registerForm.dirty)
+          "
+          class="text-red-600 w-96"
+        >
+          Password confirm does not match with the password value.
+        </div>
+        <div class="mb-6">
+          <input class="mr-2" type="checkbox" name="terms" id="terms" />
+          <label for="terms">Accept terms and conditions</label>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="bg-sky-500 py-2 px-5 rounded-full hover:bg-sky-600 disabled:bg-sky-700 disabled:text-neutral-300"
+            [disabled]="!registerForm.valid"
+          >
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
+    <a class="hover:underline" routerLink="/login">go to login</a>
+  </section>
 </div>

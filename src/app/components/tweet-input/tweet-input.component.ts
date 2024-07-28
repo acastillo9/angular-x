@@ -7,18 +7,17 @@ import { Tweet } from '../../models/tweet.model';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './tweet-input.component.html',
-  styleUrl: './tweet-input.component.scss'
+  styleUrl: './tweet-input.component.scss',
 })
 export class TweetInputComponent {
-  @Output()
-  onInput: EventEmitter<Tweet> = new EventEmitter()
+  @Output() save = new EventEmitter();
 
-  tweetText: string = ''
+  tweetText = '';
 
   saveTweet() {
     const newTweet: Tweet = {
-      content: this.tweetText
-    }
-    this.onInput.emit(newTweet)
+      content: this.tweetText,
+    };
+    this.save.emit(newTweet);
   }
 }

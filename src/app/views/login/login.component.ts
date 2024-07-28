@@ -8,26 +8,26 @@ import { Router, RouterModule } from '@angular/router';
   standalone: true,
   imports: [FormsModule, RouterModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  username: string = ''
-  password: string = ''
-  errorMessage: string = ''
+  username = '';
+  password = '';
+  errorMessage = '';
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+  ) {}
 
   login() {
-    console.log(this.username, this.password)
-
     this.authService.login(this.username, this.password).subscribe({
       next: () => {
-        this.router.navigateByUrl('/timeline')
+        this.router.navigateByUrl('/timeline');
       },
       error: (error) => {
-        console.log(error)
-        this.errorMessage = (error as any).message
-      }
-    })
+        this.errorMessage = error.message;
+      },
+    });
   }
 }

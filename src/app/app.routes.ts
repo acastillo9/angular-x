@@ -5,22 +5,22 @@ import { LoginComponent } from './views/login/login.component';
 import { CanActivateUser } from './shared/auth.guard';
 
 export const routes: Routes = [
-    {
-        path: 'register',
-        component: RegisterComponent
-    },
-    {
-        path: 'login',
-        component: LoginComponent
-    },
-    {
-        path: 'timeline',
-        component: TimelineComponent,
-        canActivate: [CanActivateUser]
-    },
-    {
-        path: '',
-        redirectTo: 'timeline',
-        pathMatch: 'full'
-    }
+  {
+    path: 'register',
+    component: RegisterComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: 'timeline',
+    component: TimelineComponent,
+    canActivate: [CanActivateUser],
+  },
+  {
+    path: '',
+    redirectTo: 'timeline',
+    pathMatch: 'full',
+  },
 ];

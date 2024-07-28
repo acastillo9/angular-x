@@ -4,18 +4,17 @@ import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UsersService {
-
   users: User[] = [
     {
       username: 'juan09',
-      password: '123456'
-    }
-  ]
+      password: '123456',
+    },
+  ];
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   // async addUser(user: User) {
   //   try {
@@ -36,13 +35,14 @@ export class UsersService {
   addUser(user: User): Observable<User> {
     return this.httpClient.post<User>('http://localhost:3000/users', user, {
       headers: {
-        "content-Type": "application/json"
-      }
-    })
+        'content-Type': 'application/json',
+      },
+    });
   }
 
   findUser(username: string): Observable<User> {
-    return this.httpClient.get<User[]>(`http://localhost:3000/users?username=${username}`)
-      .pipe(map((users: User[]) => users[0])) // TODO remove this if you remove json-server
+    return this.httpClient
+      .get<User[]>(`http://localhost:3000/users?username=${username}`)
+      .pipe(map((users: User[]) => users[0])); // TODO remove this if you remove json-server
   }
 }

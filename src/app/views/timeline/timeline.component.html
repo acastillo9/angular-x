@@ -1,12 +1,12 @@
 <section class="timeline">
   <button (click)="logout()">Logout</button>
 
-  <app-tweet-input (onInput)="saveTweet($event)"></app-tweet-input>
+  <app-tweet-input (save)="saveTweet($event)"></app-tweet-input>
 
   <div class="timeline">
     <div>
       @for (tweet of tweets; track tweet.id) {
-      <app-tweet [tweet]="tweet" (clickTweet)="tweetClicked()"></app-tweet>
+        <app-tweet [tweet]="tweet" (clickTweet)="tweetClicked()"></app-tweet>
       }
     </div>
   </div>

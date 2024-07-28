@@ -16,22 +16,26 @@ import { AuthService } from '../../services/auth.service';
   styleUrl: './timeline.component.scss',
 })
 export class TimelineComponent {
-  tweetText: string = ''
-  tweets = this.tweetService.tweets
+  tweetText = '';
+  tweets = this.tweetService.tweets;
 
-  constructor(private tweetService: TweetService, private router: Router, private authService: AuthService) {}
+  constructor(
+    private tweetService: TweetService,
+    private router: Router,
+    private authService: AuthService,
+  ) {}
 
   tweetClicked() {
-    console.log('Tweet Clicked!!!')
-    this.tweetText = 'Tweet Clicked'
+    console.log('Tweet Clicked!!!');
+    this.tweetText = 'Tweet Clicked';
   }
 
   saveTweet(tweet: Tweet) {
-    this.tweetService.addTweet(tweet)
+    this.tweetService.addTweet(tweet);
   }
 
   logout() {
-    this.authService.logout()
-    this.router.navigateByUrl('/login')
+    this.authService.logout();
+    this.router.navigateByUrl('/login');
   }
 }
