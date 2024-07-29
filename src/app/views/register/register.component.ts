@@ -30,12 +30,12 @@ export class RegisterComponent {
       passwordConfirm: new FormControl(''),
       terms: new FormControl(false),
     },
-    { validators: passwordConfirmValidator },
+    { validators: passwordConfirmValidator }
   );
 
   constructor(
     private usersService: UsersService,
-    private router: Router,
+    private router: Router
   ) {}
 
   get name() {
@@ -54,7 +54,7 @@ export class RegisterComponent {
       // store the form data
       this.usersService
         .addUser(this.registerForm.value as User)
-        .subscribe((data) => {
+        .subscribe(data => {
           console.log('saved', data);
           this.router.navigate(['/login']);
         });

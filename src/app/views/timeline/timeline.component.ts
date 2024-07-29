@@ -22,7 +22,7 @@ export class TimelineComponent {
   constructor(
     private tweetService: TweetService,
     private router: Router,
-    private authService: AuthService,
+    private authService: AuthService
   ) {}
 
   tweetClicked() {

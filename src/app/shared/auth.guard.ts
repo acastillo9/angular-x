@@ -7,14 +7,14 @@ import { catchError, map } from 'rxjs';
 export class CanActivateUser implements CanActivate {
   constructor(
     private authService: AuthService,
-    private router: Router,
+    private router: Router
   ) {}
   canActivate(): MaybeAsync<GuardResult> {
     const isLoggedIn = this.authService.isLoggedIn();
     if (!isLoggedIn) {
       return this.authService.loadProfile().pipe(
-        map((user) => !!user),
-        catchError(() => this.router.navigateByUrl('/login')),
+        map(user => !!user),
+        catchError(() => this.router.navigateByUrl('/login'))
       );
     }
     return true;

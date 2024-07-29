@@ -20,7 +20,7 @@ export class LoginComponent {
 
   constructor(
     private authService: AuthService,
-    private router: Router,
+    private router: Router
   ) {}
 
   login() {
@@ -28,7 +28,7 @@ export class LoginComponent {
       next: () => {
         this.router.navigateByUrl('/timeline');
       },
-      error: (error) => {
+      error: error => {
         this.errorMessage = error.message;
       },
     });

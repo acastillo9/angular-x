@@ -15,19 +15,19 @@ export class AuthService {
     return this.httpClient
       .post<{ access_token: string }>('/auth/login', { username, password })
       .pipe(
-        map((response) => {
+        map(response => {
           localStorage.setItem('access_token', response.access_token);
         }),
-        catchError((errorResponse) => {
+        catchError(errorResponse => {
           return throwError(() => new Error(errorResponse.error.message));
-        }),
+        })
       );
   }
 
   loadProfile(): Observable<User> {
     return this.httpClient
       .get<User>('/auth/me')
-      .pipe(tap((user) => (this.loggedUser = user)));
+      .pipe(tap(user => (this.loggedUser = user)));
   }
 
   getToken() {
