@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { UsersService } from './users.service';
 import { User } from '../models/user.model';
-import { catchError, map, Observable, throwError } from 'rxjs';
+import { catchError, map, Observable, tap, throwError } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -10,10 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class AuthService {
   loggedUser: User | undefined = undefined;
 
-  constructor(
-    private usersService: UsersService,
-    private httpClient: HttpClient,
-  ) {}
+  constructor(private httpClient: HttpClient) {}
 
   login(username: string, password: string): Observable<void> {
     return this.httpClient
@@ -28,21 +24,14 @@ export class AuthService {
       );
   }
 
-  getToken() {
-    return localStorage.getItem('access_token') || '';
+  loadProfile(): Observable<User> {
+    return this.httpClient
+      .get<User>('/auth/me')
+      .pipe(tap((user) => (this.loggedUser = user)));
   }
 
-  getLocalSession(): Observable<boolean> | boolean {
-    const username = localStorage.getItem('user');
-    if (username) {
-      return this.usersService.findUser(username).pipe(
-        map((user) => {
-          this.loggedUser = user;
-          return true;
-        }),
-      );
-    }
-    return false;
+  getToken() {
+    return localStorage.getItem('access_token') || '';
   }
 
   isLoggedIn() {

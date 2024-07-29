@@ -30,7 +30,7 @@
         />
 
         <button
-          class="bg-gray-100 py-3 px-5 rounded-full text-black font-bold text-lg hover:bg-gray-200 disabled:bg-gray-300 disabled:opacity-50"
+          class="bg-gray-100 py-3 px-5 rounded-full text-black font-bold text-lg transition hover:bg-gray-200 disabled:bg-gray-300 disabled:opacity-50"
           [disabled]="!username || !password"
           (click)="login()"
         >
