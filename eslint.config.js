@@ -44,7 +44,6 @@ module.exports = tseslint.config(
   },
   {
     files: ['**/*.html'],
-    excludedFiles: ['*inline-template-*.component.html'],
     extends: [eslintPluginPrettierRecommended],
     rules: {
       'prettier/prettier': ['error', { parser: 'angular' }],
