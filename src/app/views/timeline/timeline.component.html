@@ -6,7 +6,9 @@
   <div class="timeline">
     <div>
       @for (tweet of tweets; track tweet.id) {
-        <app-tweet [tweet]="tweet" (clickTweet)="tweetClicked()"></app-tweet>
+        <app-tweet
+          [tweet]="tweet"
+          (clickTweet)="tweetClicked(tweet.id!)"></app-tweet>
       }
     </div>
   </div>

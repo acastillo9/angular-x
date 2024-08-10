@@ -5,13 +5,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TweetService } from '../../services/tweet.service';
 import { TweetInputComponent } from '../../components/tweet-input/tweet-input.component';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-timeline',
   standalone: true,
-  imports: [TweetComponent, CommonModule, FormsModule, TweetInputComponent],
+  imports: [
+    TweetComponent,
+    CommonModule,
+    FormsModule,
+    TweetInputComponent,
+    RouterModule,
+  ],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.scss',
 })
@@ -25,9 +31,11 @@ export class TimelineComponent {
     private authService: AuthService
   ) {}
 
-  tweetClicked() {
-    console.log('Tweet Clicked!!!');
+  tweetClicked(tweetId: number) {
+    console.log('Tweet Clicked!!!', tweetId);
     this.tweetText = 'Tweet Clicked';
+
+    this.router.navigate(['/tweets', tweetId]); // /tweets/3
   }
 
   saveTweet(tweet: Tweet) {

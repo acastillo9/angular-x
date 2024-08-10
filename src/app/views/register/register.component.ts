@@ -10,11 +10,14 @@ import { passwordConfirmValidator } from '../../shared/password-confirm.directiv
 import { UsersService } from '../../services/users.service';
 import { User } from '../../models/user.model';
 import { Router, RouterModule } from '@angular/router';
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
+import { faBrandXTwitter } from '@ng-icons/font-awesome/brands';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, RouterModule],
+  imports: [ReactiveFormsModule, CommonModule, RouterModule, NgIconComponent],
+  providers: [provideIcons({ faBrandXTwitter })],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss',
 })

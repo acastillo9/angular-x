@@ -4,6 +4,7 @@ import { TimelineComponent } from './views/timeline/timeline.component';
 import { LoginComponent } from './views/login/login.component';
 import { CanActivateUser } from './shared/auth.guard';
 import { LayoutComponent } from './components/layout/layout.component';
+import { TweetDetailsComponent } from './views/tweet-details/tweet-details.component';
 
 export const routes: Routes = [
   {
@@ -20,14 +21,23 @@ export const routes: Routes = [
     canActivate: [CanActivateUser],
     children: [
       {
-        path: 'timeline',
+        path: 'home',
         component: TimelineComponent,
+      },
+      {
+        path: 'tweets/:id',
+        component: TweetDetailsComponent,
+      },
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full',
       },
     ],
   },
   {
     path: '',
-    redirectTo: 'timeline',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
 ];

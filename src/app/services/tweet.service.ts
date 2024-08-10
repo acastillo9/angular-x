@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Tweet } from '../models/tweet.model';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -62,6 +64,8 @@ export class TweetService {
     },
   ];
 
+  constructor(private http: HttpClient) {}
+
   addTweet(tweet: Tweet) {
     // This is creating mock data
     const newTweet = {
@@ -82,5 +86,9 @@ export class TweetService {
     };
 
     this.tweets.push(newTweet);
+  }
+
+  getTweet(tweetId: string): Observable<Tweet> {
+    return this.http.get<Tweet>(`/tweets/${tweetId}`);
   }
 }

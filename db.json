@@ -91,5 +91,51 @@
       "dateOfBirth": "1999-10-10"
     }
   ],
-  "tweets": []
+  "tweets": [
+    {
+      "id": 1,
+      "user": {
+        "profilePhoto":
+          "https://pbs.twimg.com/profile_images/1780044485541699584/p78MCn3B_400x400.jpg",
+        "name": "Elon Musk",
+        "username": "@elonmusk"
+      },
+      "date": "20h",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, aut repudiandae. Quo modi iste laboriosam, possimus quasi et officiis unde facere quaerat, voluptatem perferendis adipisci quae est animi rerum deleniti!",
+      "comments": 23,
+      "retweets": 11,
+      "likes": 34,
+      "stats": 22
+    },
+    {
+      "id": 2,
+      "user": {
+        "profilePhoto":
+          "https://pbs.twimg.com/profile_images/1780044485541699584/p78MCn3B_400x400.jpg",
+        "name": "Elon Musk",
+        "username": "@elonmusk"
+      },
+      "date": "20h",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, aut repudiandae. Quo modi iste laboriosam, possimus quasi et officiis unde facere quaerat, voluptatem perferendis adipisci quae est animi rerum deleniti!",
+      "comments": 23,
+      "retweets": 11,
+      "likes": 34,
+      "stats": 22
+    },
+    {
+      "id": 3,
+      "user": {
+        "profilePhoto":
+          "https://pbs.twimg.com/profile_images/1780044485541699584/p78MCn3B_400x400.jpg",
+        "name": "Elon Musk",
+        "username": "@elonmusk"
+      },
+      "date": "20h",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, aut repudiandae. Quo modi iste laboriosam, possimus quasi et officiis unde facere quaerat, voluptatem perferendis adipisci quae est animi rerum deleniti!",
+      "comments": 23,
+      "retweets": 11,
+      "likes": 34,
+      "stats": 22
+    }
+  ]
 }
