@@ -95,47 +95,752 @@
     {
       "id": 1,
       "user": {
-        "profilePhoto":
-          "https://pbs.twimg.com/profile_images/1780044485541699584/p78MCn3B_400x400.jpg",
-        "name": "Elon Musk",
-        "username": "@elonmusk"
+        "id": 1,
+        "profileImage": "https://randomuser.me/api/portraits/men/1.jpg",
+        "name": "Alfy Dolder",
+        "username": "@adolder0"
       },
       "date": "20h",
-      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, aut repudiandae. Quo modi iste laboriosam, possimus quasi et officiis unde facere quaerat, voluptatem perferendis adipisci quae est animi rerum deleniti!",
-      "comments": 23,
-      "retweets": 11,
-      "likes": 34,
-      "stats": 22
+      "content": "Excited about the new project I'm working on! Stay tuned for updates.",
+      "comments": 5,
+      "retweets": 3,
+      "likes": 15,
+      "stats": 4
     },
     {
       "id": 2,
       "user": {
-        "profilePhoto":
-          "https://pbs.twimg.com/profile_images/1780044485541699584/p78MCn3B_400x400.jpg",
-        "name": "Elon Musk",
-        "username": "@elonmusk"
+        "id": 2,
+        "profileImage": "https://randomuser.me/api/portraits/women/2.jpg",
+        "name": "Bella Bright",
+        "username": "@bellabright"
       },
-      "date": "20h",
-      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, aut repudiandae. Quo modi iste laboriosam, possimus quasi et officiis unde facere quaerat, voluptatem perferendis adipisci quae est animi rerum deleniti!",
-      "comments": 23,
-      "retweets": 11,
-      "likes": 34,
-      "stats": 22
+      "date": "2d",
+      "content": "Had a great weekend with friends, looking forward to the week ahead!",
+      "comments": 10,
+      "retweets": 7,
+      "likes": 25,
+      "stats": 8
     },
     {
       "id": 3,
       "user": {
-        "profilePhoto":
-          "https://pbs.twimg.com/profile_images/1780044485541699584/p78MCn3B_400x400.jpg",
-        "name": "Elon Musk",
-        "username": "@elonmusk"
+        "id": 3,
+        "profileImage": "https://randomuser.me/api/portraits/men/3.jpg",
+        "name": "Charlie Charming",
+        "username": "@charmingcharlie"
       },
-      "date": "20h",
-      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, aut repudiandae. Quo modi iste laboriosam, possimus quasi et officiis unde facere quaerat, voluptatem perferendis adipisci quae est animi rerum deleniti!",
-      "comments": 23,
-      "retweets": 11,
-      "likes": 34,
+      "date": "3d",
+      "content": "Reading an amazing book on leadership. Highly recommend it!",
+      "comments": 8,
+      "retweets": 4,
+      "likes": 22,
+      "stats": 9
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": 4,
+        "profileImage": "https://randomuser.me/api/portraits/women/4.jpg",
+        "name": "Daisy Duke",
+        "username": "@daisyduke"
+      },
+      "date": "5d",
+      "content": "Just finished a challenging workout session. Feeling great!",
+      "comments": 12,
+      "retweets": 5,
+      "likes": 30,
+      "stats": 10
+    },
+    {
+      "id": 5,
+      "user": {
+        "id": 5,
+        "profileImage": "https://randomuser.me/api/portraits/men/5.jpg",
+        "name": "Ethan Rocks",
+        "username": "@ethanrocks"
+      },
+      "date": "6d",
+      "content": "Loving the new album from my favorite band! On repeat all day.",
+      "comments": 18,
+      "retweets": 10,
+      "likes": 50,
+      "stats": 15
+    },
+    {
+      "id": 6,
+      "user": {
+        "id": 6,
+        "profileImage": "https://randomuser.me/api/portraits/women/6.jpg",
+        "name": "Fiona Flare",
+        "username": "@fionaflare"
+      },
+      "date": "7d",
+      "content": "Experimenting with new recipes in the kitchen. Cooking is so fun!",
+      "comments": 20,
+      "retweets": 8,
+      "likes": 45,
+      "stats": 18
+    },
+    {
+      "id": 7,
+      "user": {
+        "id": 7,
+        "profileImage": "https://randomuser.me/api/portraits/men/7.jpg",
+        "name": "George Glow",
+        "username": "@georgeglow"
+      },
+      "date": "1w",
+      "content": "Just watched an inspiring documentary on innovation. A must-see!",
+      "comments": 15,
+      "retweets": 7,
+      "likes": 38,
+      "stats": 12
+    },
+    {
+      "id": 8,
+      "user": {
+        "id": 8,
+        "profileImage": "https://randomuser.me/api/portraits/women/8.jpg",
+        "name": "Hannah Hue",
+        "username": "@hannahhue"
+      },
+      "date": "2w",
+      "content": "Exploring new places in the city. There's always something new to discover!",
+      "comments": 25,
+      "retweets": 12,
+      "likes": 60,
+      "stats": 20
+    },
+    {
+      "id": 9,
+      "user": {
+        "id": 9,
+        "profileImage": "https://randomuser.me/api/portraits/men/9.jpg",
+        "name": "Ian Inspire",
+        "username": "@ianinspire"
+      },
+      "date": "2w",
+      "content": "Just had a productive meeting with the team. Exciting things ahead!",
+      "comments": 30,
+      "retweets": 15,
+      "likes": 70,
+      "stats": 25
+    },
+    {
+      "id": 10,
+      "user": {
+        "id": 10,
+        "profileImage": "https://randomuser.me/api/portraits/women/10.jpg",
+        "name": "Jasmine Light",
+        "username": "@jasminelight"
+      },
+      "date": "3w",
+      "content": "Starting a new hobby this week. Can't wait to dive in!",
+      "comments": 35,
+      "retweets": 17,
+      "likes": 80,
+      "stats": 30
+    },
+    {
+      "id": 11,
+      "user": {
+        "id": 1,
+        "profileImage": "https://randomuser.me/api/portraits/men/1.jpg",
+        "name": "Alfy Dolder",
+        "username": "@adolder0"
+      },
+      "date": "18h",
+      "content": "Finally got around to watching that movie everyone's been talking about. It didn't disappoint!",
+      "comments": 8,
+      "retweets": 4,
+      "likes": 28,
+      "stats": 9
+    },
+    {
+      "id": 12,
+      "user": {
+        "id": 2,
+        "profileImage": "https://randomuser.me/api/portraits/women/2.jpg",
+        "name": "Bella Bright",
+        "username": "@bellabright"
+      },
+      "date": "19h",
+      "content": "Spent the afternoon at the park. The weather was perfect, and the vibes were amazing.",
+      "comments": 12,
+      "retweets": 6,
+      "likes": 40,
+      "stats": 14
+    },
+    {
+      "id": 13,
+      "user": {
+        "id": 3,
+        "profileImage": "https://randomuser.me/api/portraits/men/3.jpg",
+        "name": "Charlie Charming",
+        "username": "@charmingcharlie"
+      },
+      "date": "21h",
+      "content": "Learning a new programming language. The challenges are real, but so is the excitement!",
+      "comments": 15,
+      "retweets": 7,
+      "likes": 50,
+      "stats": 18
+    },
+    {
+      "id": 14,
+      "user": {
+        "id": 4,
+        "profileImage": "https://randomuser.me/api/portraits/women/4.jpg",
+        "name": "Daisy Duke",
+        "username": "@daisyduke"
+      },
+      "date": "1d",
+      "content": "Had a delicious meal at a new restaurant today. Highly recommend it if you're in town!",
+      "comments": 20,
+      "retweets": 10,
+      "likes": 55,
+      "stats": 20
+    },
+    {
+      "id": 15,
+      "user": {
+        "id": 5,
+        "profileImage": "https://randomuser.me/api/portraits/men/5.jpg",
+        "name": "Ethan Rocks",
+        "username": "@ethanrocks"
+      },
+      "date": "1d",
+      "content": "Working on some new music. Can't wait to share it with everyone!",
+      "comments": 22,
+      "retweets": 12,
+      "likes": 60,
+      "stats": 25
+    },
+    {
+      "id": 16,
+      "user": {
+        "id": 6,
+        "profileImage": "https://randomuser.me/api/portraits/women/6.jpg",
+        "name": "Fiona Flare",
+        "username": "@fionaflare"
+      },
+      "date": "1d",
+      "content": "Tried my hand at painting today. It's tougher than it looks, but so rewarding!",
+      "comments": 18,
+      "retweets": 8,
+      "likes": 45,
+      "stats": 15
+    },
+    {
+      "id": 17,
+      "user": {
+        "id": 7,
+        "profileImage": "https://randomuser.me/api/portraits/men/7.jpg",
+        "name": "George Glow",
+        "username": "@georgeglow"
+      },
+      "date": "2d",
+      "content": "Had a deep conversation with an old friend today. It's amazing how some things never change.",
+      "comments": 25,
+      "retweets": 15,
+      "likes": 70,
+      "stats": 30
+    },
+    {
+      "id": 18,
+      "user": {
+        "id": 8,
+        "profileImage": "https://randomuser.me/api/portraits/women/8.jpg",
+        "name": "Hannah Hue",
+        "username": "@hannahhue"
+      },
+      "date": "2d",
+      "content": "Found a new coffee spot in the neighborhood. Might become my new favorite!",
+      "comments": 28,
+      "retweets": 14,
+      "likes": 75,
+      "stats": 32
+    },
+    {
+      "id": 19,
+      "user": {
+        "id": 9,
+        "profileImage": "https://randomuser.me/api/portraits/men/9.jpg",
+        "name": "Ian Inspire",
+        "username": "@ianinspire"
+      },
+      "date": "3d",
+      "content": "Started a new book today. The story is captivating so far!",
+      "comments": 30,
+      "retweets": 18,
+      "likes": 80,
+      "stats": 35
+    },
+    {
+      "id": 20,
+      "user": {
+        "id": 10,
+        "profileImage": "https://randomuser.me/api/portraits/women/10.jpg",
+        "name": "Jasmine Light",
+        "username": "@jasminelight"
+      },
+      "date": "3d",
+      "content": "Took a day off to recharge. Sometimes, it's just what you need.",
+      "comments": 35,
+      "retweets": 20,
+      "likes": 85,
+      "stats": 40
+    },
+    {
+      "id": 21,
+      "user": {
+        "id": 1,
+        "profileImage": "https://randomuser.me/api/portraits/men/1.jpg",
+        "name": "Alfy Dolder",
+        "username": "@adolder0"
+      },
+      "date": "4d",
+      "content": "Just wrapped up a successful project at work. Feeling accomplished!",
+      "comments": 20,
+      "retweets": 8,
+      "likes": 60,
+      "stats": 18
+    },
+    {
+      "id": 22,
+      "user": {
+        "id": 2,
+        "profileImage": "https://randomuser.me/api/portraits/women/2.jpg",
+        "name": "Bella Bright",
+        "username": "@bellabright"
+      },
+      "date": "4d",
+      "content": "Trying out some new yoga poses this morning. Feeling refreshed!",
+      "comments": 15,
+      "retweets": 7,
+      "likes": 55,
+      "stats": 12
+    },
+    {
+      "id": 23,
+      "user": {
+        "id": 3,
+        "profileImage": "https://randomuser.me/api/portraits/men/3.jpg",
+        "name": "Charlie Charming",
+        "username": "@charmingcharlie"
+      },
+      "date": "5d",
+      "content": "Exploring the mountains this weekend. Nature never fails to amaze me.",
+      "comments": 25,
+      "retweets": 12,
+      "likes": 75,
+      "stats": 20
+    },
+    {
+      "id": 24,
+      "user": {
+        "id": 4,
+        "profileImage": "https://randomuser.me/api/portraits/women/4.jpg",
+        "name": "Daisy Duke",
+        "username": "@daisyduke"
+      },
+      "date": "5d",
+      "content": "Baked some cookies today. They turned out perfect!",
+      "comments": 30,
+      "retweets": 15,
+      "likes": 80,
+      "stats": 25
+    },
+    {
+      "id": 25,
+      "user": {
+        "id": 5,
+        "profileImage": "https://randomuser.me/api/portraits/men/5.jpg",
+        "name": "Ethan Rocks",
+        "username": "@ethanrocks"
+      },
+      "date": "6d",
+      "content": "Listening to a podcast on entrepreneurship. So many great insights!",
+      "comments": 18,
+      "retweets": 10,
+      "likes": 65,
       "stats": 22
+    },
+    {
+      "id": 26,
+      "user": {
+        "id": 6,
+        "profileImage": "https://randomuser.me/api/portraits/women/6.jpg",
+        "name": "Fiona Flare",
+        "username": "@fionaflare"
+      },
+      "date": "6d",
+      "content": "Spent the afternoon gardening. The flowers are blooming beautifully!",
+      "comments": 20,
+      "retweets": 9,
+      "likes": 70,
+      "stats": 23
+    },
+    {
+      "id": 27,
+      "user": {
+        "id": 7,
+        "profileImage": "https://randomuser.me/api/portraits/men/7.jpg",
+        "name": "George Glow",
+        "username": "@georgeglow"
+      },
+      "date": "1w",
+      "content": "Reflecting on the past year. Grateful for the growth and experiences.",
+      "comments": 22,
+      "retweets": 11,
+      "likes": 75,
+      "stats": 28
+    },
+    {
+      "id": 28,
+      "user": {
+        "id": 8,
+        "profileImage": "https://randomuser.me/api/portraits/women/8.jpg",
+        "name": "Hannah Hue",
+        "username": "@hannahhue"
+      },
+      "date": "1w",
+      "content": "Discovered a new passion for photography. Capturing moments is so fulfilling.",
+      "comments": 28,
+      "retweets": 13,
+      "likes": 85,
+      "stats": 30
+    },
+    {
+      "id": 29,
+      "user": {
+        "id": 9,
+        "profileImage": "https://randomuser.me/api/portraits/men/9.jpg",
+        "name": "Ian Inspire",
+        "username": "@ianinspire"
+      },
+      "date": "1w",
+      "content": "Had a breakthrough idea today. Excited to see where this leads!",
+      "comments": 32,
+      "retweets": 16,
+      "likes": 90,
+      "stats": 35
+    },
+    {
+      "id": 30,
+      "user": {
+        "id": 10,
+        "profileImage": "https://randomuser.me/api/portraits/women/10.jpg",
+        "name": "Jasmine Light",
+        "username": "@jasminelight"
+      },
+      "date": "1w",
+      "content": "Visited an art gallery today. The creativity on display was inspiring.",
+      "comments": 35,
+      "retweets": 18,
+      "likes": 95,
+      "stats": 40
+    },
+    {
+      "id": 31,
+      "user": {
+        "id": 1,
+        "profileImage": "https://randomuser.me/api/portraits/men/1.jpg",
+        "name": "Alfy Dolder",
+        "username": "@adolder0"
+      },
+      "date": "2w",
+      "content": "Catching up on some reading. A quiet evening is sometimes all you need.",
+      "comments": 15,
+      "retweets": 7,
+      "likes": 50,
+      "stats": 17
+    },
+    {
+      "id": 32,
+      "user": {
+        "id": 2,
+        "profileImage": "https://randomuser.me/api/portraits/women/2.jpg",
+        "name": "Bella Bright",
+        "username": "@bellabright"
+      },
+      "date": "2w",
+      "content": "Had a productive day at work. Checking off tasks feels so good!",
+      "comments": 18,
+      "retweets": 8,
+      "likes": 60,
+      "stats": 20
+    },
+    {
+      "id": 33,
+      "user": {
+        "id": 3,
+        "profileImage": "https://randomuser.me/api/portraits/men/3.jpg",
+        "name": "Charlie Charming",
+        "username": "@charmingcharlie"
+      },
+      "date": "2w",
+      "content": "Just signed up for an online course. Can't wait to start learning something new.",
+      "comments": 20,
+      "retweets": 10,
+      "likes": 65,
+      "stats": 22
+    },
+    {
+      "id": 34,
+      "user": {
+        "id": 4,
+        "profileImage": "https://randomuser.me/api/portraits/women/4.jpg",
+        "name": "Daisy Duke",
+        "username": "@daisyduke"
+      },
+      "date": "2w",
+      "content": "Spent the day with family. Cherishing these moments.",
+      "comments": 25,
+      "retweets": 12,
+      "likes": 70,
+      "stats": 25
+    },
+    {
+      "id": 35,
+      "user": {
+        "id": 5,
+        "profileImage": "https://randomuser.me/api/portraits/men/5.jpg",
+        "name": "Ethan Rocks",
+        "username": "@ethanrocks"
+      },
+      "date": "3w",
+      "content": "Got lost in a new video game. The graphics and story are next-level!",
+      "comments": 28,
+      "retweets": 15,
+      "likes": 80,
+      "stats": 30
+    },
+    {
+      "id": 36,
+      "user": {
+        "id": 6,
+        "profileImage": "https://randomuser.me/api/portraits/women/6.jpg",
+        "name": "Fiona Flare",
+        "username": "@fionaflare"
+      },
+      "date": "3w",
+      "content": "Planning my next travel destination. So many places to explore!",
+      "comments": 30,
+      "retweets": 18,
+      "likes": 85,
+      "stats": 32
+    },
+    {
+      "id": 37,
+      "user": {
+        "id": 7,
+        "profileImage": "https://randomuser.me/api/portraits/men/7.jpg",
+        "name": "George Glow",
+        "username": "@georgeglow"
+      },
+      "date": "3w",
+      "content": "Attended a workshop on personal development today. Learned a lot!",
+      "comments": 32,
+      "retweets": 20,
+      "likes": 90,
+      "stats": 35
+    },
+    {
+      "id": 38,
+      "user": {
+        "id": 8,
+        "profileImage": "https://randomuser.me/api/portraits/women/8.jpg",
+        "name": "Hannah Hue",
+        "username": "@hannahhue"
+      },
+      "date": "3w",
+      "content": "Just finished a challenging puzzle. The sense of accomplishment is real!",
+      "comments": 35,
+      "retweets": 22,
+      "likes": 95,
+      "stats": 40
+    },
+    {
+      "id": 39,
+      "user": {
+        "id": 9,
+        "profileImage": "https://randomuser.me/api/portraits/men/9.jpg",
+        "name": "Ian Inspire",
+        "username": "@ianinspire"
+      },
+      "date": "3w",
+      "content": "Reflecting on the journey so far. Every step has been worth it.",
+      "comments": 28,
+      "retweets": 14,
+      "likes": 85,
+      "stats": 33
+    },
+    {
+      "id": 40,
+      "user": {
+        "id": 10,
+        "profileImage": "https://randomuser.me/api/portraits/women/10.jpg",
+        "name": "Jasmine Light",
+        "username": "@jasminelight"
+      },
+      "date": "4w",
+      "content": "Taking some time to unwind and relax. Self-care is so important.",
+      "comments": 30,
+      "retweets": 16,
+      "likes": 88,
+      "stats": 34
+    },
+    {
+      "id": 41,
+      "user": {
+        "id": 1,
+        "profileImage": "https://randomuser.me/api/portraits/men/1.jpg",
+        "name": "Alfy Dolder",
+        "username": "@adolder0"
+      },
+      "date": "4w",
+      "content": "Started learning a new hobby. The progress is slow but rewarding!",
+      "comments": 18,
+      "retweets": 9,
+      "likes": 65,
+      "stats": 22
+    },
+    {
+      "id": 42,
+      "user": {
+        "id": 2,
+        "profileImage": "https://randomuser.me/api/portraits/women/2.jpg",
+        "name": "Bella Bright",
+        "username": "@bellabright"
+      },
+      "date": "4w",
+      "content": "Caught up with an old friend today. It's always nice to reconnect.",
+      "comments": 20,
+      "retweets": 10,
+      "likes": 70,
+      "stats": 25
+    },
+    {
+      "id": 43,
+      "user": {
+        "id": 3,
+        "profileImage": "https://randomuser.me/api/portraits/men/3.jpg",
+        "name": "Charlie Charming",
+        "username": "@charmingcharlie"
+      },
+      "date": "1m",
+      "content": "Took a long walk by the river today. The fresh air was much needed.",
+      "comments": 22,
+      "retweets": 12,
+      "likes": 75,
+      "stats": 28
+    },
+    {
+      "id": 44,
+      "user": {
+        "id": 4,
+        "profileImage": "https://randomuser.me/api/portraits/women/4.jpg",
+        "name": "Daisy Duke",
+        "username": "@daisyduke"
+      },
+      "date": "1m",
+      "content": "Tried a new recipe today, and it turned out amazing. Definitely making it again!",
+      "comments": 25,
+      "retweets": 13,
+      "likes": 80,
+      "stats": 30
+    },
+    {
+      "id": 45,
+      "user": {
+        "id": 5,
+        "profileImage": "https://randomuser.me/api/portraits/men/5.jpg",
+        "name": "Ethan Rocks",
+        "username": "@ethanrocks"
+      },
+      "date": "1m",
+      "content": "Watched a documentary on space exploration. The universe is truly fascinating!",
+      "comments": 28,
+      "retweets": 15,
+      "likes": 85,
+      "stats": 32
+    },
+    {
+      "id": 46,
+      "user": {
+        "id": 6,
+        "profileImage": "https://randomuser.me/api/portraits/women/6.jpg",
+        "name": "Fiona Flare",
+        "username": "@fionaflare"
+      },
+      "date": "1m",
+      "content": "Took a break from social media today. Sometimes you need to disconnect to reconnect.",
+      "comments": 30,
+      "retweets": 18,
+      "likes": 90,
+      "stats": 35
+    },
+    {
+      "id": 47,
+      "user": {
+        "id": 7,
+        "profileImage": "https://randomuser.me/api/portraits/men/7.jpg",
+        "name": "George Glow",
+        "username": "@georgeglow"
+      },
+      "date": "1m",
+      "content": "Started a new fitness challenge today. Let's see how it goes!",
+      "comments": 32,
+      "retweets": 20,
+      "likes": 95,
+      "stats": 38
+    },
+    {
+      "id": 48,
+      "user": {
+        "id": 8,
+        "profileImage": "https://randomuser.me/api/portraits/women/8.jpg",
+        "name": "Hannah Hue",
+        "username": "@hannahhue"
+      },
+      "date": "1m",
+      "content": "Had an amazing conversation with a stranger today. Life is full of surprises.",
+      "comments": 35,
+      "retweets": 22,
+      "likes": 100,
+      "stats": 40
+    },
+    {
+      "id": 49,
+      "user": {
+        "id": 9,
+        "profileImage": "https://randomuser.me/api/portraits/men/9.jpg",
+        "name": "Ian Inspire",
+        "username": "@ianinspire"
+      },
+      "date": "1m",
+      "content": "Invested in some new tech today. Excited to see how it enhances my workflow.",
+      "comments": 38,
+      "retweets": 24,
+      "likes": 105,
+      "stats": 42
+    },
+    {
+      "id": 50,
+      "user": {
+        "id": 10,
+        "profileImage": "https://randomuser.me/api/portraits/women/10.jpg",
+        "name": "Jasmine Light",
+        "username": "@jasminelight"
+      },
+      "date": "1m",
+      "content": "Wrapped up a creative project today. The results were better than expected!",
+      "comments": 40,
+      "retweets": 25,
+      "likes": 110,
+      "stats": 45
     }
   ]
 }
